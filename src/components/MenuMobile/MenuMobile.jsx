@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import arrow_down from './assets/icon-arrow-down.svg'
 import arrow_up from './assets/icon-arrow-up.svg'
-import close from './assets/icon-close-menu.svg'
+
 import todo from './assets/icon-todo.svg'
 import calendar from './assets/icon-calendar.svg'
 import reminders from './assets/icon-reminders.svg'
@@ -10,13 +10,18 @@ import './MenuMobile.css'
 
 const MenuMobile
  = () => {
+
+    const [clickFeauteres, setClickFeatures]=useState(false)
+    const mostrar_features=()=>{
+        setClickFeatures(!clickFeauteres)
+    }
     return(
         <ul className='menu_mobile'>
-            <img src={close} alt="" />
+            
             <li>
-                <a>Features</a><img src={arrow_down}/><img src={arrow_up}/>
+                <a onClick={mostrar_features}>Features</a>{!clickFeauteres ? <img src={arrow_down}/> : <img src={arrow_up}/>}
             </li>
-                <ul className='features_mobile'>
+                <ul className={!clickFeauteres ? 'oculto' : 'features_mobile'}>
                 <li> <img src={todo} alt="" /> Todo List</li>
                 <li> <img src={calendar} alt="" /> Calendar</li>
                 <li> <img src={reminders} alt="" /> Reminders</li>

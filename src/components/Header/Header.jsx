@@ -3,6 +3,7 @@ import './Header.css'
 import arrow_down from './assets/icon-arrow-down.svg'
 import arrow_up from './assets/icon-arrow-up.svg'
 import menu from './assets/icon-menu.svg'
+import close from './assets/icon-close-menu.svg'
 import { Features } from '../Features/Features';
 import { Company } from '../Company/Company';
 import { MenuMobile } from '../MenuMobile/MenuMobile';
@@ -49,7 +50,10 @@ const Header = () => {
             <div className='login'>
                 <a href="">Login</a>
                 <button>Register</button>
-                <img className='icono' src={menu} alt="icono de menu" onClick={monstrar_menu_mobile}/>
+            
+            
+                {!clickMenu ? <img className='icono' src={menu} onClick={monstrar_menu_mobile}/> : <img className='icono' src={close} onClick={monstrar_menu_mobile}/>}
+
                 {clickMenu && <MenuMobile/>}
                 
             </div>
