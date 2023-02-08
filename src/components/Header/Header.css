@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --almost_white: hsl(0, 0%, 98%);
+    --medium_gray: hsl(0, 0%, 41%);
+    --almost_black: hsl(0, 0%, 8%);
+    --fondo: #FAFAFA;
+}
+header{
+    display: flex;
+    padding:2vh 3vw 8vh;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    background-color: var(--fondo);    
+}
+header>h1 {
+    font-weight: 700;
+    color:var(--almost_black);
+    flex-basis: 12%;  
+}
+nav{
+    flex-basis: 73%;
+    display: flex;
+    align-items: center;
+}
+.nav_ancla{
+    margin-right: 3vw;
+    padding: 2vh 0;
+}
+
+.nav_ancla>a{
+    margin-right: 1vw;
+    text-decoration: none;
+    color:var(--medium_gray);
+
+}
+.nav_ancla > a:hover{
+    color: var(--almost_black);
+}
+nav > a{
+    margin-right: 3vw;
+    text-decoration: none;
+    color:var(--medium_gray);
+}
+nav > a:hover {
+    color: var(--almost_black);
+}
+.login{
+    flex-basis: 15%;
+}
+.login>a{
+    margin-right: 3vw;
+    text-decoration: none;
+    color:var(--medium_gray);
+}
+.login>a:hover{
+    color: var(--almost_black);
+
+}
+.login>button{
+    padding:10px 18px;
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: var(--fondo)  ;
+    border: 1px solid var(--medium_gray);
+    color:var(--medium_gray);
+    cursor: pointer;
+}
+.login>button:hover{
+    border:2px solid var(--almost_black);
+    color: var(--almost_black);
+    font-weight: 700;
+}
+.icono{
+    display: none;
+}
+@media (max-width:500px) {
+
+    nav, .login>a, .login>button{
+        display: none;
+    }
+    .icono{
+        display: block;
+    }
+    .login{
+        flex-basis: 0;
+    }
+    header{
+        justify-content: space-between;
+    }
+}

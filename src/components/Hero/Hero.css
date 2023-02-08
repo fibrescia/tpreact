@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+    --almost_white: hsl(0, 0%, 98%);
+    --medium_gray: hsl(0, 0%, 41%);
+    --almost_black: hsl(0, 0%, 8%);
+    --fondo: #FAFAFA;
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13vw;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--fondo);
+}
+.hero_texto{
+    margin-right: 7vw;
+}
+.hero_texto>h1{
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom:5vh;
+    margin-top: 10vh;
+}
+.hero_texto>p{
+    color:var(--medium_gray);
+    margin-bottom:5vh;
+    font-size: 18px;
+    max-width: 30vw;
+    line-height: 26px;
+}
+
+.hero_texto > button{
+    padding: 15px 30px;
+    background-color: var(--almost_black);
+    color: var(--almost_white);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10vh;
+    border: 1px solid var(--almost_black);
+    cursor: pointer;
+}
+.hero_texto > button:hover{
+    background-color: var(--almost_white);
+    color: var(--almost_black);
+    transition: .3s;
+}
+
+footer > img{
+    margin-right: 3vw;
+}
+
+.hero_desktop{
+    width: 40%;
+}
+.hero_mobile{
+    display: none;
+}
+
+
+@media (max-width:500px) {
+    .hero_desktop{
+        display: none;
+    }
+    .hero_mobile{
+        display: block;
+        width: 100vw;
+        margin-bottom: 8.5vh;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        padding: 0 4vw; 
+    }
+    .hero_texto{
+        text-align: center;
+        margin-right: 0;
+    }
+    .hero_texto>h1{
+        font-size: 2rem;
+        margin-bottom:3vh;
+    }
+    .hero_texto>p{
+        max-width: 100vw;
+        font-size: 16px;
+    }
+    .hero_texto > button{
+        margin-bottom: 7vh;
+    }
+    footer > img{
+        width: 20vw;
+        margin-bottom: 10vh;
+    }
+}
