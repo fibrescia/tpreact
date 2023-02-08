@@ -24,8 +24,11 @@
     font-size: 13px;
     color: var(--medium_gray);
     margin-bottom: 1vw;
+    cursor: pointer;
 }
-
+.features > li:hover{
+    color: var(--almost_black);
+}
 li>img{
     margin-right: 1vw;
 }

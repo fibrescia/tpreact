@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+:root{
+    --almost_white: hsl(0, 0%, 98%);
+    --medium_gray: hsl(0, 0%, 41%);
+    --almost_black: hsl(0, 0%, 8%);
+    --fondo: #FAFAFA;
+}
+.menu_mobile{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--fondo);
+    height: 100%;
+    width: 65%;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 13px;
+}
+.menu_mobile>img{
+    width: 10%;
+    padding: 3vh 3vw;
+    align-self:flex-end;
+    margin-bottom: 3vh;
+}
+.menu_mobile>li {
+    padding: 2vh 7vw;
+}
+li>a{
+    text-decoration: none;
+    color: var(--medium_gray) ;
+    cursor: pointer;
+}
+.log, .reg{
+    width: fit-content;
+    align-self: center;
+    padding: 1.5vh 15vw;
+    margin-top: 3vh;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 13px;
+    color: var(--medium_gray);
+}
+.log{
+    background-color: var(--fondo);
+    border: none;
+}
+.reg{
+    background-color: var(--fondo);
+    border: 1px solid var(--almost_black);
+}
+
+.features_mobile , .company_mobile{
+    padding: 0vh 12vw;
+    list-style: none;
+}
+.features_mobile>li{
+    padding: 1.5vh 0;
+    color: var(--medium_gray);
+}
+.company_mobile>li{
+    padding: 1.5vh 0;
+    color: var(--medium_gray);
+}

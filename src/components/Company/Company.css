@@ -24,4 +24,8 @@
     font-size: 13px;
     color: var(--medium_gray);
     margin-bottom: 1vw;
+    cursor: pointer;
+}
+.company > li:hover{
+    color: var(--almost_black);
 }

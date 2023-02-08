@@ -19,12 +19,16 @@
 .hero_texto{
     margin-right: 7vw;
 }
-.hero_texto>h1{
-    font-weight: 700;
-    font-size: 5rem;
-    margin-bottom:5vh;
-    margin-top: 10vh;
+.hero_titulo{
+    margin: 14vh 0 5vh;
+    display: flex;
+    flex-direction: column;
 }
+.hero_titulo>h1{
+    font-weight: 700;
+    font-size: 4.2rem;
+}
+
 .hero_texto>p{
     color:var(--medium_gray);
     margin-bottom:5vh;
@@ -55,7 +59,7 @@ footer > img{
 }
 
 .hero_desktop{
-    width: 40%;
+    width: 35%;
 }
 .hero_mobile{
     display: none;
@@ -79,8 +83,12 @@ footer > img{
         text-align: center;
         margin-right: 0;
     }
-    .hero_texto>h1{
-        font-size: 2rem;
+    .hero_titulo{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .hero_titulo>h1{
+        font-size: 2.1rem;
         margin-bottom:3vh;
     }
     .hero_texto>p{

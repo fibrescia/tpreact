@@ -5,6 +5,7 @@ import arrow_up from './assets/icon-arrow-up.svg'
 import menu from './assets/icon-menu.svg'
 import { Features } from '../Features/Features';
 import { Company } from '../Company/Company';
+import { MenuMobile } from '../MenuMobile/MenuMobile';
 
 
 
@@ -17,6 +18,11 @@ const Header = () => {
     const [hoverCompany,setHoverCompany]=useState(false)
     const mostrar_company = () =>{
         setHoverCompany(!hoverCompany)
+    }
+
+    const [clickMenu, setClickMenu]=useState(false)
+    const monstrar_menu_mobile = () => {
+        setClickMenu(!clickMenu)
     }
 
 
@@ -43,7 +49,9 @@ const Header = () => {
             <div className='login'>
                 <a href="">Login</a>
                 <button>Register</button>
-                <img className='icono' src={menu} alt="icono de menu" />
+                <img className='icono' src={menu} alt="icono de menu" onClick={monstrar_menu_mobile}/>
+                {clickMenu && <MenuMobile/>}
+                
             </div>
         </header>
     )

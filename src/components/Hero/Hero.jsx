@@ -11,7 +11,10 @@ const Hero = () => {
     return(
         <section className='hero'>
             <div className='hero_texto'>
-                <h1>Make remote work</h1>
+                <div className='hero_titulo'>
+                    <h1>Make</h1> 
+                        <h1>remote work</h1>
+                </div>
                 <p>Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.</p>
                 <button>Learn more</button>
