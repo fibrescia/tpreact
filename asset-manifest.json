@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tpreact/static/css/main.bedb7364.css",
+    "main.css": "/tpreact/static/css/main.f5406deb.css",
     "main.js": "/tpreact/static/js/main.838228aa.js",
     "static/media/image-hero-desktop.png": "/tpreact/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/tpreact/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
@@ -17,11 +17,11 @@
     "static/media/icon-menu.svg": "/tpreact/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/tpreact/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/tpreact/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.bedb7364.css.map": "/tpreact/static/css/main.bedb7364.css.map",
+    "main.f5406deb.css.map": "/tpreact/static/css/main.f5406deb.css.map",
     "main.838228aa.js.map": "/tpreact/static/js/main.838228aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.bedb7364.css",
+    "static/css/main.f5406deb.css",
     "static/js/main.838228aa.js"
   ]
 }
