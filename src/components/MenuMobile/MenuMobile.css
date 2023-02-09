@@ -9,6 +9,7 @@
 }
 .menu_mobile{
     margin-top: 12vh;
+    padding-bottom: 25vh;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -85,11 +86,13 @@ li>a:hover{
 }
 
 .fondo{
+    padding:20vh 0 ;
     background-color: black;
     opacity: .65;
     width: 35%;
     height: 100%;
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 0;
 }
