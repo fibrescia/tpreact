@@ -79,3 +79,17 @@ li>a:hover{
 .oculto{
     display: none;
 }
+
+.pantalla_menu{
+    display: flex;
+}
+
+.fondo{
+    background-color: black;
+    opacity: .65;
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

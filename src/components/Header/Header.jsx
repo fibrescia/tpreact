@@ -27,10 +27,6 @@ const Header = () => {
         setClickMenu(!clickMenu)
     }
 
-
-
-
-
     return(
         <header>
             <h1>snap</h1>

@@ -21,6 +21,10 @@ const MenuMobile
         setClickCompany(!clickCompany)
     }
     return(
+
+        <div className='pantalla_menu'>
+            <div className='fondo'>
+            </div>
         <ul className='menu_mobile'>
             
             <li>
@@ -49,6 +53,8 @@ const MenuMobile
             <button className='log'>Login</button>
             <button className='reg'>Register</button>
         </ul>
+
+        </div>
     )
 }
 
