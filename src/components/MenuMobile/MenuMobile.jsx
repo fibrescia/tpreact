@@ -15,6 +15,11 @@ const MenuMobile
     const mostrar_features=()=>{
         setClickFeatures(!clickFeauteres)
     }
+
+    const[clickCompany, setClickCompany] = useState(false)
+    const mostrar_company=()=>{
+        setClickCompany(!clickCompany)
+    }
     return(
         <ul className='menu_mobile'>
             
@@ -28,9 +33,9 @@ const MenuMobile
                 <li> <img src={planning} alt="" /> Planning</li>
                 </ul>
             <li>
-                <a>Company</a><img src={arrow_down}/><img src={arrow_up}/>                   
+                <a onClick={mostrar_company}>Company</a>{!clickCompany ? <img src={arrow_down}/> : <img src={arrow_up}/>}                   
             </li>
-            <ul className='company_mobile'>
+            <ul className={!clickCompany ? 'oculto' : 'company_mobile'}>
                 <li>History</li>
                 <li>Our Team</li>
                 <li>Blog</li>

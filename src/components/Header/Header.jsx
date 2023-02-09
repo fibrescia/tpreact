@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
 import './Header.css'
 import arrow_down from './assets/icon-arrow-down.svg'
 import arrow_up from './assets/icon-arrow-up.svg'
@@ -7,6 +7,7 @@ import close from './assets/icon-close-menu.svg'
 import { Features } from '../Features/Features';
 import { Company } from '../Company/Company';
 import { MenuMobile } from '../MenuMobile/MenuMobile';
+import { Hero } from '../Hero/Hero';
 
 
 
@@ -25,6 +26,9 @@ const Header = () => {
     const monstrar_menu_mobile = () => {
         setClickMenu(!clickMenu)
     }
+
+
+
 
 
     return(
@@ -55,7 +59,7 @@ const Header = () => {
                 {!clickMenu ? <img className='icono' src={menu} onClick={monstrar_menu_mobile}/> : <img className='icono' src={close} onClick={monstrar_menu_mobile}/>}
 
                 {clickMenu && <MenuMobile/>}
-                
+            
             </div>
         </header>
     )

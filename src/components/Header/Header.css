@@ -84,6 +84,8 @@ nav > a:hover {
 .icono{
     display: none;
     position: absolute;
+    right: 2vw;
+    top: 3vh;
     z-index: 2;
 }
 @media (max-width:500px) {

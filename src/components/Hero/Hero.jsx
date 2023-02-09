@@ -5,7 +5,9 @@ import hero_mobile from './assets/image-hero-mobile.png'
 import footer_1 from './assets/client-databiz.svg'
 import footer_2 from './assets/client-audiophile.svg'
 import footer_3 from './assets/client-meet.svg'
-import footer_4 from './assets/client-maker.svg'
+import footer_4 from './assets/client-maker.svg' 
+
+
 
 const Hero = () => {
     return(
