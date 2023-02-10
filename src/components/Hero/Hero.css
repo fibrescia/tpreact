@@ -28,7 +28,6 @@
     font-weight: 700;
     font-size: 4.2rem;
 }
-
 .hero_texto>p{
     color:var(--medium_gray);
     margin-bottom:5vh;
@@ -85,13 +84,17 @@ footer > img{
     }
     .hero_titulo{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 0vh 0;
     }
     .hero_titulo>h1{
         font-size: 2.1rem;
         margin-bottom:4vh;
     }
+    .make{
+        margin-right:8px;
+    }
+
     .hero_texto>p{
         max-width: 100vw;
         font-size: 16px;

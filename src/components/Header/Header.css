@@ -88,7 +88,7 @@ nav > a:hover {
     top: 3vh;
     z-index: 2;
 }
-@media (max-width:500px) {
+@media (max-width:700px) {
 
     nav, .login>a, .login>button{
         display: none;
@@ -102,4 +102,11 @@ nav > a:hover {
     header{
         justify-content: space-between;
     }
+}
+
+@media (max-width: 1200px) {
+    .login{
+        flex-basis: 40%;
+    }
+
 }

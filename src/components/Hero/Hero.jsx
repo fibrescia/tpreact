@@ -14,7 +14,7 @@ const Hero = () => {
         <section className='hero'>
             <div className='hero_texto'>
                 <div className='hero_titulo'>
-                    <h1>Make</h1> 
+                    <h1 className='make'>Make</h1> 
                         <h1>remote work</h1>
                 </div>
                 <p>Get your team in sync, no matter your location. Streamline processes, 
